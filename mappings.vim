@@ -6,6 +6,8 @@ let g:UltiSnipsJumpbackwardTrigger="<c-z>"
 "On pressing Ctrl + q, snippet expands
 let g:UltiSnipsExpandTrigger='<c-q>'
 
+set nohlsearch
+
 :set number 
 :set splitright
 
@@ -14,6 +16,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+noremap <C-l> "+yy
 "Previous Tab
 nnoremap <C-Left> :tabprevious<CR>                                                                            
 "Next Tab

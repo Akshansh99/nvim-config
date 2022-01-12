@@ -1,17 +1,37 @@
 snippet ctemp "Template for cpp" c
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
+#define all(x) x.begin(),x.end()
+#define mod 1000000007
+#define fast ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+int lcm(int a , int b) {return a * b / __gcd(a, b);}
+int modpow(int x , int n , int m) {int res = 1; while (n) {if (n % 2)res = (res * x) % m, n--; else {x = (x * x) % m , n /= 2;}} return res;}
+bool palindrome(std::string s) {if (equal(s.begin(), s.begin() + s.size() / 2, s.rbegin())) {return true;} return false;}
 
-void solve()
-{
+const int lol = 10000000;
+bool prime[lol+1];
+
+void sieve(){
+	int n = lol;
+	memset(prime, true, sizeof(prime));
+	for (int p = 2; p * p <= n; p++)
+		if (prime[p] == true)
+			for (int i = p * p; i <= n; i += p)
+				prime[i] = false;
+}
+
+void solve(){
 $1
 }
 
-int main()
-{
-	int testcases; cin>>testcases;
-	while(testcases--)
+int32_t main(){
+	fast;
+	int m; cin>>m;
+
+	while(m--){
 		solve();
+	}
 }
 
 endsnippet

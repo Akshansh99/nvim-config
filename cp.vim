@@ -72,5 +72,5 @@ let g:split_term_style = 'vertical'
 
 " add a custom command to resize the terminal window to your preference
 " (default is to split the screen equally)
-let g:split_term_resize_cmd = 'vertical resize 40'
+let g:split_term_resize_cmd = 'vertical resize 70'
 " (or let g:split_term_resize_cmd = 'vertical resize 40')
